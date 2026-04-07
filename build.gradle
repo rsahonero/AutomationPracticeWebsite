@@ -1,0 +1,31 @@
+plugins {
+    id("java")
+}
+
+group = "org.example"
+version = "1.0-SNAPSHOT"
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    // Importar BOM de Cucumber (maneja versiones automáticamente)
+    implementation platform("io.cucumber:cucumber-bom:7.31.0")
+
+    // Dependencias de Cucumber - SIN versión (la toma del BOM)
+    implementation "io.cucumber:cucumber-java"
+    implementation "io.cucumber:cucumber-testng"
+    implementation "io.cucumber:query"
+
+    // Otras dependencias
+    implementation "io.github.bonigarcia:webdrivermanager:6.3.3"
+    implementation "org.seleniumhq.selenium:selenium-java:4.41.0"
+
+    // TestNG
+    testImplementation "org.testng:testng:7.11.0"
+}
+
+tasks.test {
+    useTestNG()
+}
