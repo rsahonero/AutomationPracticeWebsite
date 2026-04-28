@@ -1,4 +1,4 @@
-package ui.pages;
+package ui.pages.login;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
@@ -13,10 +13,6 @@ import java.time.Duration;
 public class LoginPage {
     private final WebDriver driver;
     private final WebDriverWait wait;
-
-    //private By usernameTextBox = By.xpath("//input[@data-qa='login-email']");
-    //private By passwordTextBox = By.xpath("//input[@data-qa='login-password']");
-    //private By loginButton = By.xpath("//button[@data-qa='login-button']");
 
     @FindBy(name = "email")
     private WebElement usernameTextBox;
@@ -37,16 +33,17 @@ public class LoginPage {
     }
 
     public void enterUsername(String username){
+        wait.until(ExpectedConditions.visibilityOf(usernameTextBox));
         usernameTextBox.sendKeys(username);
     }
     public void enterPassword(String password){
+        wait.until(ExpectedConditions.visibilityOf(passwordTextBox));
         passwordTextBox.sendKeys(password);
     }
     public HomePage clickLogin(){
         wait.until(ExpectedConditions.elementToBeClickable(loginButton));
         loginButton.click();
         HomePage homePage = new HomePage(driver);
-        //homePage.waitForPageToLoad();
         return new HomePage(driver);
     }
 

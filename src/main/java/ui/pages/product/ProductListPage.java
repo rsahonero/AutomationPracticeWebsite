@@ -1,4 +1,4 @@
-package ui.pages.components;
+package ui.pages.product;
 
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
@@ -11,7 +11,7 @@ import org.openqa.selenium.support.ui.WebDriverWait;
 
 import java.time.Duration;
 
-public class ProductsPage {
+public class ProductListPage {
     private final WebDriver driver;
     private final WebDriverWait wait;
     private Actions actions;
@@ -36,7 +36,7 @@ public class ProductsPage {
 
     @FindBy(xpath = "//a[text()='Blue Top']")
     private WebElement selectProduct;
-    public ProductsPage(WebDriver driver) {
+    public ProductListPage(WebDriver driver) {
         this.driver = driver;
         this.wait = new WebDriverWait(driver, Duration.ofSeconds(10));
         this.actions = new Actions(driver);

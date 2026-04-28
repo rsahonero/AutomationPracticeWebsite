@@ -34,4 +34,10 @@ public class ConfigReader {
     public static String getAppLoginUrl() {
         return properties.getProperty("app.login_url");
     }
+
+    public static String getAppProductUrl() {
+        return properties.getProperty("app.product_url");
+    }
+
+
 }
