@@ -47,7 +47,6 @@ public class ProductDetailsPage {
             Thread.currentThread().interrupt();
         }
     }
-
     public boolean isProductDisplayed() {
         try {
             actions.moveToElement(product).perform();

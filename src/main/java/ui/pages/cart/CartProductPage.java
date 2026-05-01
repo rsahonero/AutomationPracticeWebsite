@@ -35,7 +35,7 @@ public class CartProductPage {
             viewCart.click();
             System.out.println("Click on the Cart link");
         } catch (Exception e) {
-            System.out.println("Error when cliking on Cart." + e.getMessage());
+            System.out.println("Error when clicking on Cart." + e.getMessage());
         }
     }
     public boolean isTitleEquals() {

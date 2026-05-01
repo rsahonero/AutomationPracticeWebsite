@@ -47,14 +47,6 @@ public class LoginPage {
         return new HomePage(driver);
     }
 
-//    public String getErrorMessage() {
-//        try {
-//            WebElement message = wait.until(ExpectedConditions.visibilityOfElementLocated((By) errorMessage));
-//            return message.getText();
-//        } catch (Exception e) {
-//            return "Your email or password is incorrect!";
-//        }
-//    }
 
 
 }
