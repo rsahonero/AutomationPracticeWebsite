@@ -1,13 +1,13 @@
-package steps.contactUs;
+package com.atexercise.tests.contact;
 
-import hooks.Hooks;
+import com.atexercise.hooks.Hooks;
 import io.cucumber.java.en.And;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
 import org.openqa.selenium.WebDriver;
 import org.testng.Assert;
-import ui.pages.ContactUsPage;
-import utils.ConfigReader;
+import com.atexercise.pages.contact.ContactUsPage;
+import com.atexercise.utils.ConfigReader;
 
 public class ContactUsTest {
 

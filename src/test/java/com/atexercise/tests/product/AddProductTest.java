@@ -1,15 +1,15 @@
-package steps.product;
+package com.atexercise.tests.product;
 
-import hooks.Hooks;
+import com.atexercise.hooks.Hooks;
 import io.cucumber.java.en.And;
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
 import org.openqa.selenium.WebDriver;
 import org.testng.Assert;
-import ui.pages.login.LoginPage;
-import ui.pages.product.ProductListPage;
-import utils.ConfigReader;
+import com.atexercise.pages.login.LoginPage;
+import com.atexercise.pages.product.ProductListPage;
+import com.atexercise.utils.ConfigReader;
 
 
 public class AddProductTest {

@@ -1,4 +1,4 @@
-package ui.pages.cart;
+package com.atexercise.pages.cart;
 
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;

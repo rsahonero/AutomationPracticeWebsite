@@ -1,16 +1,16 @@
-package ui.pages.login;
+package com.atexercise.pages.login;
 
-import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
+import com.atexercise.pages.BasePage;
 
 import java.time.Duration;
 
-public class LoginPage {
+public class LoginPage extends BasePage {
     private final WebDriver driver;
     private final WebDriverWait wait;
 
@@ -35,6 +35,7 @@ public class LoginPage {
     public void enterUsername(String username){
         wait.until(ExpectedConditions.visibilityOf(usernameTextBox));
         usernameTextBox.sendKeys(username);
+
     }
     public void enterPassword(String password){
         wait.until(ExpectedConditions.visibilityOf(passwordTextBox));

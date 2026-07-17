@@ -1,6 +1,5 @@
 Feature: Detail Product
   Background:
-#    Given The user is on the Product page
     Given The user has logged in successfully
     And You are on the Product page
 

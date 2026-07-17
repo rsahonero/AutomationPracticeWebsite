@@ -1,14 +1,11 @@
-package ui.pages.login;
+package com.atexercise.pages.login;
 
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 import org.openqa.selenium.support.ui.WebDriverWait;
-
 import java.time.Duration;
-
-import static java.awt.SystemColor.text;
 
 public class HomePage {
 

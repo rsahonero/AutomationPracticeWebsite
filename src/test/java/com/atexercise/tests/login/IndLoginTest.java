@@ -1,13 +1,13 @@
-package steps.login;
+package com.atexercise.tests.login;
 
-import hooks.Hooks;
+import com.atexercise.hooks.Hooks;
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
 import org.openqa.selenium.WebDriver;
-import ui.pages.login.HomePage;
-import ui.pages.login.LoginPage;
-import utils.ConfigReader;
+import com.atexercise.pages.login.HomePage;
+import com.atexercise.pages.login.LoginPage;
+import com.atexercise.utils.ConfigReader;
 
 import static org.testng.AssertJUnit.assertTrue;
 

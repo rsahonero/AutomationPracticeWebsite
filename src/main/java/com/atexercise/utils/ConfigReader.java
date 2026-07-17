@@ -1,4 +1,4 @@
-package utils;
+package com.atexercise.utils;
 
 import java.io.InputStream;
 import java.util.Properties;
